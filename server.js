@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 // const mongoConnectionString = process.env.DB_URI;
-const mongoConnectionString ="mongodb://localhost:27017/MyServiceCube";
+const mongoConnectionString ="mongodb+srv://myservicecube:myservicecube@cluster0.lc7rr.mongodb.net/myServiceCube?retryWrites=true&w=majority";
 //should change the database name
 const cors = require("cors");
 
