@@ -12,10 +12,10 @@ const app = express();
 // cors
 app.use(cors());
 app.use(express.json());
-
 app.get("/", (req, res) => {
   res.send("Welcome");
 });
+
 
 //mongoose connecting
 mongoose.connect(mongoConnectionString, {
@@ -45,6 +45,6 @@ app.use("/forget-password", forgetPasswordRoutes);
 app.use("/check-identity", checkIdentity);
 
 
-app.listen(6000, () => {
-  console.log("Server started at 6000");
+app.listen(8080, () => {
+  console.log("Server started at 8080");
 });
