@@ -45,6 +45,6 @@ app.use("/forget-password", forgetPasswordRoutes);
 app.use("/check-identity", checkIdentity);
 
 
-app.listen(8080, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server started at 8080");
 });
