@@ -28,7 +28,7 @@ const transport = nodeMailer.createTransport({
     // clientSecret: clientSecret,
     // refreshToken: refreshToken,
     // accessToken: accessToken,
-    user: "myservicecube@gmail.com",
+    user: "myservicecube@zohomail.com",
     pass: "MyServiceCube123",
   },
   tls: {
@@ -41,7 +41,7 @@ const sendVerificationEmail = async (emailAddress, name, activationCode) => {
     // const accessToken = await OauthClient.getAccessToken();
 
     const mailOptions = {
-      from: "My ServiceCube <myservicecube@gmail.com>",
+      from: "My ServiceCube <myservicecube@zohomail.com>",
       to: emailAddress,
       subject: "Verification My ServiceCube",
       html: VerificationEmailTemplate(name, activationCode),
